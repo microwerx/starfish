@@ -1,0 +1,9 @@
+[submodule "fluxions-gte"]
+	path = fluxions-gte
+	url = https://github.com/microwerx/fluxions-gte
+[submodule "hatchetfish"]
+	path = hatchetfish
+	url = https://github.com/microwerx/hatchetfish
+[submodule "fluxions-base"]
+	path = fluxions-base
+	url = https://github.com/microwerx/fluxions-base

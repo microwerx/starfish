@@ -13,12 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\ArHosekWilkie">
+      <UniqueIdentifier>{39440839-4b76-4c86-9116-f3f18b40ddbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ArHosekWilkie">
+      <UniqueIdentifier>{7873241f-f7e6-4b0f-9626-4f2098ac3bd7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\starfish_pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\starfish-astronomy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ArHosekSkyModel.cpp">
+      <Filter>Source Files\ArHosekWilkie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\starfish-pbsky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\starfish-hosek-wilkie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,6 +48,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\starfish.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArHosekSkyModel.h">
+      <Filter>Header Files\ArHosekWilkie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArHosekSkyModelData_CIEXYZ.h">
+      <Filter>Header Files\ArHosekWilkie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArHosekSkyModelData_RGB.h">
+      <Filter>Header Files\ArHosekWilkie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ArHosekSkyModelData_Spectral.h">
+      <Filter>Header Files\ArHosekWilkie</Filter>
+    </ClInclude>
+    <ClInclude Include="include\starfish-pbsky.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\starfish-hosek-wilkie.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\starfish-ipbsky.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

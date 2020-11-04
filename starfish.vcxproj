@@ -45,11 +45,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)hatchetfish/include;$(SolutionDir)fluxions-gte/include;$(SolutionDir)fluxions-base/include;$(ProjectDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)hatchetfish/include;$(SolutionDir)fluxions-gte/include;$(SolutionDir)fluxions-base/include;$(ProjectDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -82,12 +82,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ArHosekSkyModel.cpp" />
     <ClCompile Include="src\starfish-astronomy.cpp" />
+    <ClCompile Include="src\starfish-hosek-wilkie.cpp" />
+    <ClCompile Include="src\starfish-pbsky.cpp" />
     <ClCompile Include="src\starfish_pch.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\ArHosekSkyModel.h" />
+    <ClInclude Include="include\ArHosekSkyModelData_CIEXYZ.h" />
+    <ClInclude Include="include\ArHosekSkyModelData_RGB.h" />
+    <ClInclude Include="include\ArHosekSkyModelData_Spectral.h" />
     <ClInclude Include="include\starfish-astronomy.hpp" />
     <ClInclude Include="include\starfish-constants.hpp" />
+    <ClInclude Include="include\starfish-hosek-wilkie.hpp" />
+    <ClInclude Include="include\starfish-ipbsky.hpp" />
+    <ClInclude Include="include\starfish-pbsky.hpp" />
     <ClInclude Include="include\starfish.hpp" />
     <ClInclude Include="src\starfish_pch.hpp" />
   </ItemGroup>
