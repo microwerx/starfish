@@ -85,8 +85,8 @@ namespace Sf {
 		sunTurbidity = turbidity;
 		sunElevation = elevation;
 
-		minValue = FLT_MAX;
-		maxValue = -FLT_MAX;
+		minValue = std::numeric_limits<float>::max();
+		maxValue = -std::numeric_limits<float>::max();
 		totalValue = 0.0;
 		nSamples = 0;
 
